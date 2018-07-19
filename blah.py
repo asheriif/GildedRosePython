@@ -2,7 +2,8 @@ from flask import Flask,render_template
 from gilded_rose import Item,GildedRose
 from database import Database
 app = Flask(__name__)
- 
+
+## CODE DUPLICATED. NEEDS REFACTORING. 
 @app.route("/")
 def hello():
 	database = Database("database.db")
